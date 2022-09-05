@@ -7,4 +7,19 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Imagenes\Fondo.jpg" />
+    <None Remove="Imagenes\llave.png" />
+    <None Remove="Imagenes\Logo.png" />
+    <None Remove="Imagenes\user.png" />
+    <None Remove="Imagenes\usuario.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagenes\Fondo.jpg" />
+    <Resource Include="Imagenes\llave.png" />
+    <Resource Include="Imagenes\Logo.png" />
+    <Resource Include="Imagenes\user.png" />
+  </ItemGroup>
+
 </Project>
