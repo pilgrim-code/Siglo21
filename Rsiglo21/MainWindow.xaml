@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgclientes" Margin="110,49,89,102" SelectionChanged="dgclientes_SelectionChanged" />
 
     </Grid>
 </Window>
