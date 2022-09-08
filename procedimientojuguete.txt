@@ -1,0 +1,6 @@
+
+CREATE OR REPLACE PROCEDURE selectreceta (recetas out sys_refcursor )
+as 
+Begin
+    open recetas for select * from RECETA;
+end;
