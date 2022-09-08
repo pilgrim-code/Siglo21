@@ -63,7 +63,7 @@ namespace Rsiglo21.view
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            new System.Uri("view/Usuarios.xaml");
+           // new System.Uri("view/Usuarios.xaml");
 
         }
     }

@@ -7,8 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Rsiglo21
-<<<<<<< Updated upstream
-build_property.ProjectDir = C:\Users\sofia\OneDrive\Escritorio\Proyecto\Siglo21\Rsiglo21\
-=======
 build_property.ProjectDir = C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\
->>>>>>> Stashed changes
