@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+<<<<<<< Updated upstream
+=======
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgclientes" Margin="100,54,100,97" SelectionChanged="dgclientes_SelectionChanged" />
+>>>>>>> Stashed changes
 
     </Grid>
+    
 </Window>

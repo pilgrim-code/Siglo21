@@ -2,12 +2,48 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+<<<<<<< Updated upstream
+=======
+    <Compile Update="view\admpanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\Cocina.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\Finanzas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Update="view\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\Bodega.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\Usuarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
+=======
+    <Page Update="view\admpanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\Cocina.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\Finanzas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+>>>>>>> Stashed changes
     <Page Update="view\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\Bodega.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\Usuarios.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

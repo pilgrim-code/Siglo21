@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Users\sofia\OneDrive\Escritorio\Proyecto\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\
+=======
+C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\
+>>>>>>> Stashed changes
 Rsiglo21
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+<<<<<<< Updated upstream
 C:\Users\sofia\OneDrive\Escritorio\Proyecto\Siglo21\Rsiglo21\App.xaml
 2-930016823
 
 41874004509
 194-200944676
 MainWindow.xaml;view\Login.xaml;
+=======
+C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\App.xaml
+7-1483515128
+
+9-680944647
+1971985469261
+MainWindow.xaml;view\admpanel.xaml;view\Bodega.xaml;view\Cocina.xaml;view\Finanzas.xaml;view\Login.xaml;view\Usuarios.xaml;
+>>>>>>> Stashed changes
 
 False
 

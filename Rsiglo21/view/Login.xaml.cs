@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Navigation;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -19,9 +20,27 @@ namespace Rsiglo21.view
     /// </summary>
     public partial class Login : Window
     {
+<<<<<<< Updated upstream
         public Login()
         {
             InitializeComponent();
+=======
+       /* public string con = "DATA SOURCE = (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=localhost)(Port=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl))); " +
+           "PASSWORD=admin; USER ID= principal;";*/
+        public Login()
+        {
+            InitializeComponent();
+            conexion();
+        }
+
+        public void conexion()
+        {
+            /*OracleConnection ora = new OracleConnection(con);
+            ora.Open();
+
+            ora.Close();*/
+
+>>>>>>> Stashed changes
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -44,6 +63,7 @@ namespace Rsiglo21.view
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            new System.Uri("view/Usuarios.xaml");
 
         }
     }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\sofia\\OneDrive\\Escritorio\\Proyecto\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {}
   },
   "projects": {
@@ -19,6 +20,22 @@
         "configFilePaths": [
           "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+    "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
+        "projectName": "Rsiglo21",
+        "projectPath": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
+        "packagesPath": "C:\\Users\\Pilgrim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pilgrim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +43,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< Updated upstream
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
+=======
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+>>>>>>> Stashed changes
         },
         "frameworks": {
           "net6.0-windows7.0": {

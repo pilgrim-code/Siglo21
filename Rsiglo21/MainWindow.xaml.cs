@@ -20,9 +20,59 @@ namespace Rsiglo21
     /// </summary>
     public partial class MainWindow : Window
     {
+<<<<<<< Updated upstream
         public MainWindow()
         {
             InitializeComponent();
+=======
+       /* public string con = "DATA SOURCE = (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=localhost)(Port=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl))); " +
+           "PASSWORD=admin; USER ID= principal;";*/
+        public MainWindow()
+        {
+            InitializeComponent();
+            conexion();
+            cargarDT();
+        }
+
+        public void conexion()
+        {
+           /* OracleConnection ora = new OracleConnection(con);
+            ora.Open();
+
+            ora.Close();*/
+
+        }
+        private void cargarDT()
+        {
+          //  OracleConnection ora = new OracleConnection(con);
+           // OracleCommand cmd = new OracleCommand("select * from cliente", ora);
+            //ora.Open();            
+            //cmd.CommandType = CommandType.Text;
+
+          
+            /*OracleCommand cmd = new OracleCommand("cargadatos", ora);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add("registros", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+             OracleDataAdapter adaptador = new OracleDataAdapter();
+             adaptador.SelectCommand = cmd;
+             DataTable tabla = new DataTable();
+             adaptador.Fill(tabla);
+
+            dgclientes.ItemsSource = tabla.AsDataView();
+
+
+            ora.Close();*/
+        }
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void dgclientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+>>>>>>> Stashed changes
         }
     }
 }
