@@ -7,7 +7,17 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="HomePage">
 
-    <Border CornerRadius="5" Background="Transparent">
-        <Label Content="Bodega" Foreground="Black" FontSize="50" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-    </Border>
+    <Grid Background="Aqua">
+        <RadioButton Content="Mermas" Checked="RadioButton_Checked"/>
+       
+        <Label Content="Bodega" Foreground="Black" FontSize="50" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,370,0,0" Height="80" Width="191"/>
+        <DataGrid Grid.Column="1" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+
 </Page>

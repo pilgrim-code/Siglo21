@@ -50,10 +50,10 @@
                 </ToggleButton>
 
                 <StackPanel Grid.Row="3">
-                    <RadioButton x:Name="rdUsuario" IsChecked="True" Content="Usuarios"    Click="rdUsuarios_Click"/>
+                    <RadioButton x:Name="rdUsuario" IsChecked="True" Content="Usuarios"    Click="rdUsuarios_Click" Checked="rdUsuario_Checked"/>
                     <RadioButton x:Name="rdBodega" Content="Bodega" Margin="0 5 0 5" Click="rdBodega_Click"/>
                     <RadioButton x:Name="rdCocina" Content="Cocina"  Click="rdCocina_Click"/>
-                    <RadioButton x:Name="rdFinanzas" Content="Finanzas"  Margin="0 5 0 5" Click="rdFinanzas_Click"/>
+                    <RadioButton x:Name="rdFinanzas" Content="Finanzas"  Margin="0 5 0 5" Click="rdFinanzas_Click" Checked="rdFinanzas_Checked"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="3" VerticalAlignment="Bottom" Orientation="Horizontal" Width="200" Margin="0 0 0 20">

@@ -20,9 +20,13 @@ namespace Rsiglo21.view
     /// </summary>
     public partial class admpanel : Window
     {
+
         public admpanel()
         {
             InitializeComponent();
+           // RadioButton rdFinanzas = new RadioButton();
+          //  
+
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -48,6 +52,7 @@ namespace Rsiglo21.view
             // PagesNavigation.Navigate(new HomePage());
 
             PagesNavigation.Navigate(new System.Uri("view/Usuarios.xaml", UriKind.RelativeOrAbsolute));
+           // rdFinanzas.Visibility = false;
         }
 
         private void rdCocina_Click(object sender, RoutedEventArgs e)
@@ -68,6 +73,16 @@ namespace Rsiglo21.view
         private void PagesNavigation_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        private void rdUsuario_Checked(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void rdFinanzas_Checked(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

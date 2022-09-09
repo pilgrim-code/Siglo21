@@ -120,3 +120,5 @@ C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\
 C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\Rsiglo21.pdb
 C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\Rsiglo21.genruntimeconfig.cache
 C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\ref\Rsiglo21.dll
+C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\view\Mesas\Window1.g.cs
+C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\view\Mesas\Window1.baml

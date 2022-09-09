@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\App.xaml
-8-1626479697
+9-1366063629
 
-12-1501208992
+13-433969862
 1971985469261
-MainWindow.xaml;view\admpanel.xaml;view\Bodega.xaml;view\Cocina.xaml;view\Finanzas.xaml;view\Login.xaml;view\Users.xaml;view\Usuarios.xaml;
+MainWindow.xaml;view\admpanel.xaml;view\Bodega.xaml;view\Cocina.xaml;view\Finanzas.xaml;view\Login.xaml;view\Mesas\Window1.xaml;view\Users.xaml;view\Usuarios.xaml;
 
-False
+True
 

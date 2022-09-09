@@ -24,5 +24,10 @@ namespace Rsiglo21.view
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
