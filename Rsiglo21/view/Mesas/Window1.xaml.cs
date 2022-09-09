@@ -31,6 +31,15 @@ namespace Rsiglo21.view.Mesas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            OracleConnection ora = new OracleConnection(con);
+
+            ora.Open();
+            OracleCommand cmd = new OracleCommand("agregar_mesa", ora);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add("mesa", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+           
+            ora.Close();
+
 
         }
         private void dibujarMesas()
@@ -43,7 +52,10 @@ namespace Rsiglo21.view.Mesas
             cmd.Parameters.Add("mesa", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
             OracleDataAdapter adaptador = new OracleDataAdapter();
             adaptador.SelectCommand = cmd;
-           
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            PanelMesas.ItemsSource = tabla.AsDataView();
+
 
 
 

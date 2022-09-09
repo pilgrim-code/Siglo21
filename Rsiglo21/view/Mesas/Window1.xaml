@@ -19,9 +19,9 @@
 
         </StackPanel>
         <TextBox HorizontalAlignment="Left" Margin="44,77,0,0" TextWrapping="Wrap" Text="Cant Personas" VerticalAlignment="Top" Width="120"/>
-        <DockPanel x:Name="PanelMesas" LastChildFill="False" Margin="208,2,0,-2">
+        <DataGrid x:Name="PanelMesas"  Margin="208,2,0,-2">
             <Button Content="Button" RenderTransformOrigin="0.543,0.58" Width="60" Height="56" Click="Button_Click_1"/>
-        </DockPanel>
+        </DataGrid>
 
     </Grid>
 </Window>
