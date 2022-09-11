@@ -8,7 +8,10 @@
     <Compile Update="view\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\Mesas\Window1.xaml.cs">
+    <Compile Update="view\Mesa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\Mesas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -19,7 +22,10 @@
     <Page Update="view\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="view\Mesas\Window1.xaml">
+    <Page Update="view\Mesa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\Mesas.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

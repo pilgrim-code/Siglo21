@@ -4,14 +4,14 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="405" d:DesignWidth="605"
       Title="HomePage">
 
-    <Grid Background="Aqua">
-        <RadioButton Content="Mermas" Checked="RadioButton_Checked"/>
-       
-        <Label Content="Bodega" Foreground="Black" FontSize="50" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,370,0,0" Height="80" Width="191"/>
-        <DataGrid Grid.Column="1" />
+    <Grid Background="Aqua" Margin="95,0,0,0">
+        <RadioButton Content="Mermas" Checked="RadioButton_Checked" Grid.ColumnSpan="2" Margin="122,0,201,0"/>
+
+        <Label Content="Bodega" Foreground="Black" FontSize="50" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="197,315,0,0" Height="80" Width="191" Grid.ColumnSpan="2"/>
+        <DataGrid Grid.Column="1" Grid.ColumnSpan="2" Margin="191,0,10,0" />
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
 

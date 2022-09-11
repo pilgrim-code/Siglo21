@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="405" d:DesignWidth="605"
       Title="Cocina">
     <Grid Background="Aqua" >
         <Grid.ColumnDefinitions>
@@ -12,7 +12,7 @@
             <ColumnDefinition Width="281*"/>
         </Grid.ColumnDefinitions>
         <TextBlock FontSize="22" Margin="0,-2,90,418"><Run Language="es-es" Text="Cocina"/></TextBlock>
-        <DataGrid x:Name="dg" SelectionChanged="DataGrid_SelectionChanged" Margin="10,49,272,3" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dg" SelectionChanged="DataGrid_SelectionChanged" Margin="51,52,51,0" Grid.Column="1"/>
         <RadioButton Content="Admin Recetas" x:Name="AdmRecetas" Margin="10,24,116,398"/>
         <RadioButton Content="Pedidos" x:Name="Pedidos" Margin="127,27,1,401"/>
 

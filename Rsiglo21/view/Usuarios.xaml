@@ -8,7 +8,7 @@
       Title="HomePage">
     <Grid>
         <TextBlock Text="Usuarios" />
-        <DataGrid x:Name="dg" Margin="10,26,32,26" />
+        <DataGrid x:Name="dg" Margin="370,26,32,26" />
     </Grid>
     
 

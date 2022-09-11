@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MeW0bEpMey2DGsYGOcO6RbL5i4yEbDpF7O06CegV0xZT48BOPKPt2TwlSVDQbdrsgli7pQob/qSRlSKmR2do1A==",
+  "dgSpecHash": "CMXKldy1avMFg7nqMs9C9dyITdxyKqimeqgCOC20oqVJd5fGoGLuaapACbXTlkNwKYTqgiVzv/NUbt8XM1V34Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
+  "projectFilePath": "C:\\Users\\Pilgrim\\Desktop\\s21\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pilgrim\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.4\\microsoft.netcore.platforms.5.0.4.nupkg.sha512",
     "C:\\Users\\Pilgrim\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

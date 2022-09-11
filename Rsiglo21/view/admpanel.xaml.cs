@@ -42,6 +42,21 @@ namespace Rsiglo21.view
                 WindowState = WindowState.Normal;
         }
 
+        private void TBShow(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void TBHide(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void PMLBDown(object sender, MouseButtonEventArgs e)
+        {
+            MostrarOcultar.IsChecked = false;
+        }
+
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
@@ -59,6 +74,11 @@ namespace Rsiglo21.view
         {
             PagesNavigation.Navigate(new System.Uri("view/Cocina.xaml", UriKind.RelativeOrAbsolute));
         }
+        private void rdMesas_Click(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("view/Mesa.xaml", UriKind.RelativeOrAbsolute));
+        }
+
 
         private void rdBodega_Click(object sender, RoutedEventArgs e)
         {
@@ -75,14 +95,10 @@ namespace Rsiglo21.view
 
         }
 
-        private void rdUsuario_Checked(object sender, RoutedEventArgs e)
-        {
-            
-        }
 
-        private void rdFinanzas_Checked(object sender, RoutedEventArgs e)
+        private void PagesNavigation_Navigated_1(object sender, NavigationEventArgs e)
         {
-            
+
         }
     }
 }

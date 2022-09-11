@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {}
+    "C:\\Users\\Pilgrim\\Desktop\\s21\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {
+    "C:\\Users\\Pilgrim\\Desktop\\s21\\Siglo21\\Rsiglo21\\Rsiglo21.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
+        "projectUniqueName": "C:\\Users\\Pilgrim\\Desktop\\s21\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
         "projectName": "Rsiglo21",
-        "projectPath": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
+        "projectPath": "C:\\Users\\Pilgrim\\Desktop\\s21\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
         "packagesPath": "C:\\Users\\Pilgrim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pilgrim\\Desktop\\Proyectospropios\\PORTAFOLIO\\Siglo21\\Rsiglo21\\obj\\",
+        "outputPath": "C:\\Users\\Pilgrim\\Desktop\\s21\\Siglo21\\Rsiglo21\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pilgrim\\AppData\\Roaming\\NuGet\\NuGet.Config",
