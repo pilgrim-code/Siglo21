@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rsiglo21"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800"
+        >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dgclientes" Margin="110,49,89,102" SelectionChanged="dgclientes_SelectionChanged" />
+        <DataGrid x:Name="dgclientes" Margin="100,56,100,95" SelectionChanged="dgclientes_SelectionChanged" />
 
     </Grid>
 </Window>

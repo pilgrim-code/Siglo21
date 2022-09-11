@@ -27,7 +27,7 @@ namespace Rsiglo21
     public partial class MainWindow : Window
     {
         public string con = "DATA SOURCE = (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=localhost)(Port=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl))); " +
-           "PASSWORD=admin; USER ID= principal;";
+           "PASSWORD=admin; USER ID= admi;";
         public MainWindow()
         {
             InitializeComponent();
@@ -53,7 +53,7 @@ namespace Rsiglo21
           
             OracleCommand cmd = new OracleCommand("cargadatos", ora);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.Parameters.Add("registros", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("registro", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
 
              OracleDataAdapter adaptador = new OracleDataAdapter();
              adaptador.SelectCommand = cmd;
