@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\zxzna\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Pilgrim\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\zxzna\\.nuget\\packages"
     ],
     "configProperties": {
