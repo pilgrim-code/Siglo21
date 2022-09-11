@@ -79,3 +79,5 @@ C:\Users\jorge\Desktop\C#\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\refint\Rsigl
 C:\Users\jorge\Desktop\C#\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\Rsiglo21.pdb
 C:\Users\jorge\Desktop\C#\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\Rsiglo21.genruntimeconfig.cache
 C:\Users\jorge\Desktop\C#\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\ref\Rsiglo21.dll
+E:\Portafolio\Siglo21\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\view\admpanel.g.cs
+E:\Portafolio\Siglo21\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\view\admpanel.baml
