@@ -19,11 +19,15 @@
     <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.70" />
   </ItemGroup>
 
-  <ItemGroup>
+	<ItemGroup>
     <Resource Include="Imagenes\Fondo.jpg" />
     <Resource Include="Imagenes\llave.png" />
     <Resource Include="Imagenes\Logo.png" />
     <Resource Include="Imagenes\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="view\Mesas\" />
   </ItemGroup>
 
 </Project>

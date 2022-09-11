@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Portafolio\Siglo21\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\
+C:\Users\Pilgrim\Desktop\s21\Siglo21\Rsiglo21\obj\Debug\net6.0-windows\
 Rsiglo21
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\Portafolio\Siglo21\Siglo21\Rsiglo21\App.xaml
-3997569253
+C:\Users\Pilgrim\Desktop\s21\Siglo21\Rsiglo21\App.xaml
+102133276250
 
-6947658345
-197-86860473
-MainWindow.xaml;view\admpanel.xaml;view\Login.xaml;
+12-2086839139
+1971985469261
+MainWindow.xaml;view\admpanel.xaml;view\Bodega.xaml;view\Cocina.xaml;view\Finanzas.xaml;view\Login.xaml;view\Mesa.xaml;view\Mesas.xaml;view\Users.xaml;view\Usuarios.xaml;
 
 False
 
