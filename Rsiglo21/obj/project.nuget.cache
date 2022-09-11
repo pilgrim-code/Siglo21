@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PkguhR9Zfv4yX9jqpC2gRH1lKGIRw6L/tQk8oOLTrqAJvaiH+p2+3Ff7aW3DoHnT136aGsJeOSxICljM55x4UQ==",
+  "dgSpecHash": "iaQ44sDBlndO0Rdz3QILFWC+6kywR1x979cxvPsBHqwSNWBAHmIXg++VXlqna9tVvDwoIIYx0rdRjaf+VRP3dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jorge\\Desktop\\C#\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
+  "projectFilePath": "C:\\Users\\jorge\\Desktop\\Proyecto_Portafolio\\Siglo21\\Rsiglo21\\Rsiglo21.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jorge\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.4\\microsoft.netcore.platforms.5.0.4.nupkg.sha512",
     "C:\\Users\\jorge\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
@@ -19,5 +19,12 @@
     "C:\\Users\\jorge\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\jorge\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\jorge\\Desktop\\Proyecto_Portafolio\\Siglo21\\Rsiglo21\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
