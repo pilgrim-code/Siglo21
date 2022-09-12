@@ -3,12 +3,22 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800" Width="720" Height="354"
-      Title="Bodega">
+      mc:Ignorable="d"
+      Title="Bodega" Height="450" Width="800">
 
     <!--CONTENIDO-->
-    <Grid Background="Aqua" Name="GBodega" Width="720" Height="354">
-        <DataGrid x:Name="dg_bodega" Grid.ColumnSpan="3" Margin="10,10,10,112" Grid.Column="1"/>
+    <Grid Background="Aqua" Name="GBodega">
+        <DataGrid x:Name="dg_bodega" Margin="141,186,150,35"/>
+        <TextBox x:Name="txt_nombreproducto" HorizontalAlignment="Left" Margin="336,76,0,0" TextWrapping="Wrap" Text="Nombre producto" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_idproducto" HorizontalAlignment="Left" Margin="141,76,0,0" TextWrapping="Wrap" Text="Id producto" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_kg" HorizontalAlignment="Left" Margin="530,121,0,0" TextWrapping="Wrap" Text="Kilogramos" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_lt" HorizontalAlignment="Left" Margin="336,121,0,0" TextWrapping="Wrap" Text="Litros" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_stock" HorizontalAlignment="Left" Margin="141,121,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dt_fecha" HorizontalAlignment="Left" Margin="530,76,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Insertar" Content="Guardar" HorizontalAlignment="Left" Margin="683,0,0,0" VerticalAlignment="Center" Height="38" Width="92" Click="btn_Insertar_Click"/>
+        <Button x:Name="btn_Eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="683,262,0,0" VerticalAlignment="Top" Height="38" Width="92"/>
+        <Button x:Name="btn_Actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="683,376,0,0" VerticalAlignment="Top" Height="39" Width="92"/>
+        <Button x:Name="btn_Listar" Content="Listar" HorizontalAlignment="Left" Margin="683,305,0,0" VerticalAlignment="Top" Height="39" Width="92"/>
+
     </Grid>
 </Page>
