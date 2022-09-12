@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Pilgrim\Desktop\Test RF\ML\Siglo21\Rsiglo21\App.xaml
-3997569253
+9-657401801
 
-7-310385083
+14-1761041014
 1971985469261
-MainWindow.xaml;view\admpanel.xaml;view\Login.xaml;
+MainWindow.xaml;view\admpanel.xaml;view\Bodega.xaml;view\Cocina.xaml;view\Finanzas.xaml;view\Login.xaml;view\Mesa.xaml;view\Users.xaml;view\Usuarios.xaml;
 
 True
 

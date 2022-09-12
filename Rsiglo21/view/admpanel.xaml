@@ -6,33 +6,198 @@
         xmlns:local="clr-namespace:Rsiglo21.view"
         mc:Ignorable="d"
         Title="admpanel" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Imagenes/Fondo.jpg"/>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="132"/>
-            <ColumnDefinition/>
+    <Grid x:Name="Principal" Background="Transparent">
+        <!--HEADER-->
+        <!--#endregion-->
+        <!--#REGION TABBAR -->
+        <Grid x:Name="GridMenu" Background="Transparent" Width="200" HorizontalAlignment="Left" Margin="0,10,0,0" >
+            <Border Background="#6a1b9a" CornerRadius="0,0,0,10"/>
+            <!--#Region MENU ADMIN-->
+            <StackPanel Background="Transparent" VerticalAlignment="Top">
+                <!--#MOSTRAR / OCULTAR MENU -->
+                <Grid Background="Transparent" HorizontalAlignment="Right" Margin="0,10,10,0">
+                    <ToggleButton x:Name="MostrarOcultar"
+                                  Width="30" Height="30" 
+                                
+                                  BorderBrush="Transparent"
+                                  Checked="TBShow"
+                                  Unchecked="TBHide">
+                        <ToggleButton.Background>
+                            <ImageBrush ImageSource="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\menu.png"/>
+                        </ToggleButton.Background>
+                        <ToggleButton.Triggers>
+                            <!--#Esconder -->
+                            <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="EsconderPanel">
+                                        <DoubleAnimation Storyboard.TargetName="GridMenu"
+                                                         Storyboard.TargetProperty="Width"
+                                                         BeginTime="0:0:0"
+                                                         From="200" To="75"
+                                                         Duration="0:0:0:0.5"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+
+                            </EventTrigger>
+                            <!--#Mostrar-->
+                            <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                <BeginStoryboard>
+                                    <Storyboard x:Name="MostrarPanel">
+                                        <DoubleAnimation Storyboard.TargetName="GridMenu"
+                                                         Storyboard.TargetProperty="Width"
+                                                         BeginTime="0:0:0"
+                                                         From="75" To="200"
+                                                         Duration="0:0:0:0.5"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+
+                            </EventTrigger>
 
 
+                        </ToggleButton.Triggers>
+                    </ToggleButton>
+                </Grid>
 
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
-            <RowDefinition/>
+                <!--#OPCIONES ADMIN -->
+                <ListView Background="Transparent"
+                       BorderBrush="Transparent" 
+                          Margin="0,30,0,0"
+                         
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
-        </Grid.RowDefinitions>
-        <Label Content="Rsiglo21" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" Width="147" FontSize="36" Background="{x:Null}" Foreground="#FFFFBB00" FontFamily="French Script MT" Grid.ColumnSpan="2" FontWeight="Bold" FontStyle="Italic"/>
-        <TabControl Grid.Row ="1" Background="{x:Null}">
-            <TabItem>
-                <StackPanel Orientation="Vertical">
-                    <RadioButton RenderTransformOrigin="1,0.503" Height="32" Width="116"/>
-                </StackPanel>
-            </TabItem>
-
-
-        </TabControl>
-
-
+                    <ListViewItem Height="70">
+                        <RadioButton x:Name="BtnMesas"
+                                Click="rdMesas_Click"
+                                BorderBrush="Transparent"
+                                Height="70"
+                                Width="200"
+                                Cursor="Hand"
+                                Background="Transparent"
+                                >
+                            <Grid Width="200">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="50" Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\mesa-de-comedor.png"/>
+                                <TextBlock Grid.Column="1" 
+                                           FontWeight="Bold" 
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           FontSize="20" Text="Mesas"/>
+                            </Grid>
+                        </RadioButton>
+                    </ListViewItem>
+                    <ListViewItem Height="70">
+                        <RadioButton x:Name="rdCocina"
+                                BorderBrush="Transparent"
+                                Height="70"
+                                Width="200"
+                                Cursor="Hand"
+                                Background="Transparent"
+                                >
+                            <Grid Width="200">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="50" Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                <TextBlock Grid.Column="1" 
+                                           FontWeight="Bold" 
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           FontSize="20" Text="Cocina"/>
+                            </Grid>
+                        </RadioButton>
+                    </ListViewItem>
+                    <ListViewItem Height="70">
+                        <RadioButton x:Name="rdFinanzas"
+                                Click="rdFinanzas_Click"
+                                BorderBrush="Transparent"
+                                Height="70"
+                                Width="200"
+                                Cursor="Hand"
+                                Background="Transparent"
+                                >
+                            <Grid Width="200">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="50" Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\finanzas.png"/>
+                                <TextBlock Grid.Column="1" 
+                                           FontWeight="Bold" 
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           FontSize="20" Text="Finanzas"/>
+                            </Grid>
+                        </RadioButton>
+                    </ListViewItem>
+                    <ListViewItem Height="70">
+                        <RadioButton x:Name="BtnUsuarios"
+                                BorderBrush="Transparent"
+                                Height="70"
+                                Width="200"
+                                Cursor="Hand"
+                                Background="Transparent" Click="rdUsuarios_Click"
+                                >
+                            <Grid Width="200">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="50" Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                <TextBlock Grid.Column="1" 
+                                           FontWeight="Bold" 
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           FontSize="20" Text="Usuarios"/>
+                            </Grid>
+                        </RadioButton>
+                    </ListViewItem>
+                    <ListViewItem Height="70">
+                        <RadioButton x:Name="rdBodega"
+                                Click="rdBodega_Click"
+                                BorderBrush="Transparent"
+                                Height="70"
+                                Width="200"
+                                Cursor="Hand"
+                                Background="Transparent"
+                                >
+                            <Grid Width="200">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="50" Grid.Column="0"
+                                       HorizontalAlignment="Center"
+                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                <TextBlock Grid.Column="1" 
+                                           FontWeight="Bold" 
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           FontSize="20" Text="Bodega"/>
+                            </Grid>
+                        </RadioButton>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <!--#CONTENIDO PREVIEW MENU DERECHA-->
+        
+        <Border Grid.Row="1" Margin="10">
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden" Navigated="PagesNavigation_Navigated_1">
+                <!-- Page Content -->
+            </Frame>
+        </Border>
     </Grid>
+    
 </Window>
