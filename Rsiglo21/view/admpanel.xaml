@@ -23,7 +23,7 @@
                                   Checked="TBShow"
                                   Unchecked="TBHide">
                         <ToggleButton.Background>
-                            <ImageBrush ImageSource="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\menu.png"/>
+                            <ImageBrush ImageSource="\Imagenes\user.png"/>
                         </ToggleButton.Background>
                         <ToggleButton.Triggers>
                             <!--#Esconder -->
@@ -73,6 +73,7 @@
                                 Width="200"
                                 Cursor="Hand"
                                 Background="Transparent"
+                                GroupName = "Menu"
                                 >
                             <Grid Width="200">
                                 <Grid.ColumnDefinitions>
@@ -81,7 +82,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\mesa-de-comedor.png"/>
+                                       Source="\Imagenes\mesa-de-comedor.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -105,7 +106,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                       Source="\Imagenes\cocinero.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -122,6 +123,7 @@
                                 Width="200"
                                 Cursor="Hand"
                                 Background="Transparent"
+                                GroupName = "Menu"
                                 >
                             <Grid Width="200">
                                 <Grid.ColumnDefinitions>
@@ -130,7 +132,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\finanzas.png"/>
+                                       Source="\Imagenes\finanzas.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -146,6 +148,7 @@
                                 Width="200"
                                 Cursor="Hand"
                                 Background="Transparent" Click="rdUsuarios_Click"
+                                GroupName = "Menu"
                                 >
                             <Grid Width="200">
                                 <Grid.ColumnDefinitions>
@@ -154,7 +157,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                       Source="\Imagenes\cocinero.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -171,6 +174,7 @@
                                 Width="200"
                                 Cursor="Hand"
                                 Background="Transparent"
+                                GroupName = "Menu"
                                 >
                             <Grid Width="200">
                                 <Grid.ColumnDefinitions>
@@ -179,7 +183,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                       Source="\Imagenes\cocinero.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"

@@ -26,7 +26,7 @@ namespace Rsiglo21.view
     public partial class Usuarios : Page
     {
         public string con = "DATA SOURCE = (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=localhost)(Port=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl))); " +
-           "PASSWORD=admin; USER ID= pilgrim;";
+           "PASSWORD=galletaleal; USER ID= jleal;";
 
         public Usuarios()
         {

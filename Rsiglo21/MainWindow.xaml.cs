@@ -27,7 +27,7 @@ namespace Rsiglo21
     public partial class MainWindow : Window
     {
         public string con = "DATA SOURCE = (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=localhost)(Port=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl))); " +
-           "PASSWORD=admin; USER ID= admi;";
+           "PASSWORD=jleal; USER ID= galletaleal;";
         public MainWindow()
         {
             InitializeComponent();

@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="view\Mesas\**" />
+    <EmbeddedResource Remove="view\Mesas\**" />
+    <None Remove="view\Mesas\**" />
+    <Page Remove="view\Mesas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Imagenes\Fondo.jpg" />
     <None Remove="Imagenes\llave.png" />
     <None Remove="Imagenes\Logo.png" />
@@ -24,10 +31,6 @@
     <Resource Include="Imagenes\llave.png" />
     <Resource Include="Imagenes\Logo.png" />
     <Resource Include="Imagenes\user.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="view\Mesas\" />
   </ItemGroup>
 
 </Project>
