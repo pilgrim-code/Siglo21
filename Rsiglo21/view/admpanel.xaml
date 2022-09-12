@@ -23,7 +23,7 @@
                                   Checked="TBShow"
                                   Unchecked="TBHide">
                         <ToggleButton.Background>
-                            <ImageBrush ImageSource="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\menu.png"/>
+                            <ImageBrush ImageSource="C:\Users\Pilgrim\Desktop\Proyecto\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
                         </ToggleButton.Background>
                         <ToggleButton.Triggers>
                             <!--#Esconder -->
@@ -81,7 +81,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\mesa-de-comedor.png"/>
+                                       Source="/Imagenes/mesa-de-comedor.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -105,7 +105,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                       Source="/Imagenes/cocinero.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -130,7 +130,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\finanzas.png"/>
+                                       Source="\Imagenes\finanzas.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -154,7 +154,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                       Source="\Imagenes\cocinero.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -179,7 +179,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Width="50" Grid.Column="0"
                                        HorizontalAlignment="Center"
-                                       Source="C:\Users\Pilgrim\Desktop\Proyectospropios\PORTAFOLIO\Siglo21\Rsiglo21\Imagenes\cocinero.png"/>
+                                       Source="/Imagenes/cocinero.png"/>
                                 <TextBlock Grid.Column="1" 
                                            FontWeight="Bold" 
                                            VerticalAlignment="Center"
@@ -192,12 +192,20 @@
             </StackPanel>
         </Grid>
         <!--#CONTENIDO PREVIEW MENU DERECHA-->
-        
-        <Border Grid.Row="1" Margin="10">
-            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden" Navigated="PagesNavigation_Navigated_1">
+
+        <Border Margin="790,10,5,10" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden" Navigated="PagesNavigation_Navigated_1" Margin="778,0,0,0">
                 <!-- Page Content -->
             </Frame>
         </Border>
     </Grid>
-    
+
 </Window>
