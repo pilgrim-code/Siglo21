@@ -16,6 +16,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.OracleClient;
 using Oracle;
+using System.Globalization;
+using OracleInternal.SqlAndPlsqlParser;
+using Oracle.ManagedDataAccess.Types;
+
 namespace Rsiglo21.view
 {
     /// <summary>
@@ -25,12 +29,13 @@ namespace Rsiglo21.view
     {
         public string con = "DATA SOURCE = (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(Host=localhost)(Port=1521)))(CONNECT_DATA=(SERVICE_NAME=orcl))); " +
         "PASSWORD=galletaleal; USER ID= jleal;";
-
+        
         public Bodega()
         {
             InitializeComponent();
             conexion();
-            ListarBodega();
+            
+
         }
 
         public void conexion()
@@ -41,8 +46,38 @@ namespace Rsiglo21.view
             ora.Close();
 
         }
+        
+        //Se añaden productos a la bbdd
+        private void btn_Insertar_Click(object sender, RoutedEventArgs e)
+        {
+            string fecha_nueva = dt_fecha.SelectedDate.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            OracleConnection ora = new OracleConnection(con);
+            ora.Open();
+            OracleCommand cmd = new OracleCommand("INSERT INTO bodega (id_producto, nombre_producto, kg, lt, stock, ultima_repo) VALUES (:idproducto, :nombreproducto, :kilos, :litros, :stock, :fecha)", ora);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add(":idproducto", OracleDbType.Int64, Int32.Parse(txt_idproducto.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":nombreproducto", OracleDbType.Varchar2, txt_nombreproducto.Text, ParameterDirection.Input);
+            cmd.Parameters.Add(":kilos", OracleDbType.Double, Double.Parse(txt_kg.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":litros", OracleDbType.Double, Double.Parse(txt_lt.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":stock", OracleDbType.Int64, Int64.Parse(txt_stock.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":fecha", OracleDbType.Date, DateTime.Parse(dt_fecha.SelectedDate.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)), ParameterDirection.Input);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Producto añadido");
+            ora.Close();
+        }
 
-        private void ListarBodega()
+            private void btn_Actualizar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Listar_Click(object sender, RoutedEventArgs e)
         {
             OracleConnection ora = new OracleConnection(con);
 
@@ -58,37 +93,5 @@ namespace Rsiglo21.view
 
             ora.Close();
         }
-
-        private void btn_Insertar_Click(object sender, RoutedEventArgs e)
-        {
-            OracleConnection ora = new OracleConnection(con);
-            try
-            {
-                ora.Open();
-                OracleCommand cmd = new OracleCommand("INSERTAR_BODEGA", ora);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.Add("id", OracleDbType.Int64).Value = txt_idproducto.Text;
-                cmd.Parameters.Add("nom", OracleDbType.Varchar2).Value = txt_idproducto.Text;
-                cmd.Parameters.Add("kilos", OracleDbType.Varchar2).Value = txt_idproducto.Text;
-                cmd.Parameters.Add("litros", OracleDbType.Varchar2).Value = txt_idproducto.Text;
-                cmd.Parameters.Add("stock", OracleDbType.Varchar2).Value = txt_idproducto.Text;
-                cmd.Parameters.Add("fecha", OracleDbType.Varchar2).Value = txt_idproducto.Text;
-                cmd.ExecuteNonQuery(); ;
-                MessageBox.Show("Producto insertado");
-            }
-            catch
-            {
-                MessageBox.Show("Algo fallo");
-            }
-
-            ora.Close();
-        }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
     }
 }

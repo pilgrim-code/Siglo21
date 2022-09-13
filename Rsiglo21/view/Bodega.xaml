@@ -17,8 +17,8 @@
         <DatePicker x:Name="dt_fecha" HorizontalAlignment="Left" Margin="530,76,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn_Insertar" Content="Guardar" HorizontalAlignment="Left" Margin="683,0,0,0" VerticalAlignment="Center" Height="38" Width="92" Click="btn_Insertar_Click"/>
         <Button x:Name="btn_Eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="683,262,0,0" VerticalAlignment="Top" Height="38" Width="92"/>
-        <Button x:Name="btn_Actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="683,376,0,0" VerticalAlignment="Top" Height="39" Width="92"/>
-        <Button x:Name="btn_Listar" Content="Listar" HorizontalAlignment="Left" Margin="683,305,0,0" VerticalAlignment="Top" Height="39" Width="92"/>
-
+        <Button x:Name="btn_Actualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="683,376,0,0" VerticalAlignment="Top" Height="39" Width="92" Click="btn_Actualizar_Click"/>
+        <Button x:Name="btn_Listar" Content="Listar" HorizontalAlignment="Left" Margin="683,305,0,0" VerticalAlignment="Top" Height="39" Width="92" Click="btn_Listar_Click"/>
+        <Label x:Name="mostrarfecha" Content="" HorizontalAlignment="Left" Margin="512,144,0,269" />
     </Grid>
 </Page>
