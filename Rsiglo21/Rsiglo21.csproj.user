@@ -11,9 +11,6 @@
     <Compile Update="view\Mesa.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\Mesas.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="view\admpanel.xaml">
@@ -23,9 +20,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="view\Mesa.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="view\Mesas.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

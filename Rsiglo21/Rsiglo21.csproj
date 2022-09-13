@@ -15,10 +15,6 @@
     <None Remove="Imagenes\usuario.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.70" />
-  </ItemGroup>
-
 	<ItemGroup>
     <Resource Include="Imagenes\Fondo.jpg" />
     <Resource Include="Imagenes\llave.png" />
@@ -28,6 +24,16 @@
 
   <ItemGroup>
     <Folder Include="view\Mesas\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.70" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>D:\WINDOWS.X64_193000_db_home\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

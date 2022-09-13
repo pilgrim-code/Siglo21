@@ -93,7 +93,7 @@ namespace Rsiglo21.view {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Rsiglo21;V1.0.0.0;component/view/login.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Rsiglo21;component/view/login.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\view\Login.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -141,7 +141,7 @@ namespace Rsiglo21.view {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Rsiglo21;V1.0.0.0;component/view/admpanel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Rsiglo21;component/view/admpanel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\view\admpanel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

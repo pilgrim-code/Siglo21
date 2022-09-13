@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "Rsiglo21/1.0.0": {
         "dependencies": {
-          "Oracle.ManagedDataAccess.Core": "3.21.70"
+          "Oracle.ManagedDataAccess.Core": "3.21.70",
+          "Oracle.DataAccess": "2.122.19.1"
         },
         "runtime": {
           "Rsiglo21.dll": {}
@@ -104,6 +105,14 @@
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
+        }
+      },
+      "Oracle.DataAccess/2.122.19.1": {
+        "runtime": {
+          "Oracle.DataAccess.dll": {
+            "assemblyVersion": "2.122.19.1",
+            "fileVersion": "2.122.19.1"
+          }
         }
       }
     }
@@ -211,6 +220,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Oracle.DataAccess/2.122.19.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
