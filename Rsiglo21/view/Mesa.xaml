@@ -11,14 +11,17 @@
     <Grid Margin="10,0,0,0">
 
         <DataGrid Name="dgMesas" Margin="262,0,0,203"/>
-        <Button Content="Agregar" HorizontalAlignment="Left" Margin="41,218,0,0" VerticalAlignment="Top" Click="AgregarMesa"/>
         <TextBox Name="cPersonas" HorizontalAlignment="Left" Margin="41,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="idM" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Margin="41,135,0,0">
+        <TextBox Name="idM" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Margin="41,135,0,0"/>
+        <Label Content="ID MESA" HorizontalAlignment="Left" Margin="41,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="CANTIDAD  PERSONAS" HorizontalAlignment="Left" Margin="41,153,0,0" VerticalAlignment="Top"/>
 
-        </TextBox>
-        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="529,375,0,0" VerticalAlignment="Top" Click="actualizarMesa"/>
-        <Button Content="Borrar" Click="EliminarM" Margin="41,262,502,117"/>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="180" Width="120" Margin="41,0,0,0">
+            <Button Content="Agregar" Click="AgregarMesa" Width="124"/>
+            <Button Content="Borrar" Click="EliminarM"/>
+            <Button Content="Actualizar" Click="actualizarMesa"/>
 
+        </StackPanel>
     </Grid>
 </Page>
 
