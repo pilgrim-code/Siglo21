@@ -53,8 +53,8 @@ namespace Rsiglo21.view
             string fecha_nueva = dt_fecha.SelectedDate.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
             OracleConnection ora = new OracleConnection(con);
             ora.Open();
-            OracleCommand cmd = new OracleCommand("INSERT INTO bodega (id_producto, nombre_producto, kg, lt, stock, ultima_repo) VALUES (:idproducto, :nombreproducto, :kilos, :litros, :stock, :fecha)", ora);
-            cmd.CommandType = CommandType.Text;
+            OracleCommand cmd = new OracleCommand("INSERTAR_BODEGA", ora);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.Add(":idproducto", OracleDbType.Int64, Int32.Parse(txt_idproducto.Text), ParameterDirection.Input);
             cmd.Parameters.Add(":nombreproducto", OracleDbType.Varchar2, txt_nombreproducto.Text, ParameterDirection.Input);
             cmd.Parameters.Add(":kilos", OracleDbType.Double, Double.Parse(txt_kg.Text), ParameterDirection.Input);
@@ -66,9 +66,26 @@ namespace Rsiglo21.view
             ora.Close();
         }
 
+
+
+
             private void btn_Actualizar_Click(object sender, RoutedEventArgs e)
         {
+            string fecha_nueva = dt_fecha.SelectedDate.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            OracleConnection ora = new OracleConnection(con);
 
+            ora.Open();
+            OracleCommand cmd = new OracleCommand("ACTUALIZAR_BODEGA", ora);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add(":idproducto", OracleDbType.Int64, Int32.Parse(txt_idproducto.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":nombreproducto", OracleDbType.Varchar2, txt_nombreproducto.Text, ParameterDirection.Input);
+            cmd.Parameters.Add(":kilos", OracleDbType.Double, Double.Parse(txt_kg.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":litros", OracleDbType.Double, Double.Parse(txt_lt.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":stock", OracleDbType.Int64, Int64.Parse(txt_stock.Text), ParameterDirection.Input);
+            cmd.Parameters.Add(":fecha", OracleDbType.Date, DateTime.Parse(dt_fecha.SelectedDate.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)), ParameterDirection.Input);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Producto actualizado");
+            ora.Close();
         }
 
 
@@ -84,7 +101,7 @@ namespace Rsiglo21.view
             ora.Open();
             OracleCommand cmd = new OracleCommand("LISTAR_BODEGA", ora);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.Parameters.Add("bodega", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("id_producto", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
             OracleDataAdapter adaptador = new OracleDataAdapter();
             adaptador.SelectCommand = cmd;
             DataTable tabla = new DataTable();
@@ -93,5 +110,19 @@ namespace Rsiglo21.view
 
             ora.Close();
         }
+
+        private void btn_Eliminar_Click(object sender, RoutedEventArgs e)
+        {
+            OracleConnection ora = new OracleConnection(con);
+
+            ora.Open();
+            OracleCommand cmd = new OracleCommand("ELIMINAR_BODEGA", ora);
+            cmd.CommandType=System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add("id_producto", OracleDbType.Int64, Int64.Parse(txt_idproducto.Text), ParameterDirection.Input);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Producto eliminado");
+            ora.Close();
+        }
+
     }
 }
